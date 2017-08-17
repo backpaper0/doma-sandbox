@@ -21,3 +21,11 @@ dependencies {
     compile "org.seasar.doma:doma:$domaVersion"
     testCompile 'junit:junit:4.12'
 }
+
+jar {
+    def domaJar = configurations.compile.find { it.name == "doma-${domaVersion}.jar" }
+    def domaFiles = zipTree(domaJar).matching {
+            exclude '**/javax.annotation.processing.Processor', '**/MANIFEST.MF'
+        }
+    from domaFiles
+}

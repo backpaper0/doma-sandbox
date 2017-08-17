@@ -18,12 +18,11 @@ repositories {
 }
 
 dependencies {
-    compile "org.seasar.doma:doma:$domaVersion"
-    compileOnly files('../processor/build/libs/doma-customized-processor.jar')
+    compile files('../processor/build/libs/doma-customized-processor.jar')
     runtime 'com.h2database:h2:1.4.196'
 }
 
-compileJava.options.compilerArgs = ['-processor', 'customized.CustomizedDaoProcessor']
+//compileJava.options.compilerArgs = ['-processor', 'customized.CustomizedDaoProcessor']
 
 compileJava.dependsOn processResources
 processResources.destinationDir = compileJava.destinationDir
