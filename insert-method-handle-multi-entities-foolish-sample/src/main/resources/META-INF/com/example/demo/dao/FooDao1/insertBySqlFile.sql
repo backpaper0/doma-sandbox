@@ -1,0 +1,1 @@
+INSERT INTO /*#tableName*/ (val) VALUES (/* entity.val */'x')
