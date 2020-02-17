@@ -15,4 +15,7 @@ public interface SerialIdOnlyDao {
 
     @Insert
     Result<SerialIdOnly> insert(SerialIdOnly entity);
+
+    @Insert
+    Result<SerialIdAndVal> insert(SerialIdAndVal entity);
 }

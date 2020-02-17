@@ -22,5 +22,8 @@ public class SerialIdOnlyRunner implements ApplicationRunner {
 
         final SerialIdOnly entity2 = dao.insert(new SerialIdOnly(null)).getEntity();
         System.out.println(entity2);
+
+        final SerialIdAndVal entity3 = dao.insert(new SerialIdAndVal(null, 123)).getEntity();
+        System.out.println(entity3);
     }
 }
