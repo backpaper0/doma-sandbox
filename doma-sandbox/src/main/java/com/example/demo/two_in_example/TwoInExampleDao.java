@@ -1,4 +1,4 @@
-package com.example.demo.two_in_sample;
+package com.example.demo.two_in_example;
 
 import java.util.List;
 import org.seasar.doma.Dao;
@@ -7,8 +7,8 @@ import org.seasar.doma.boot.ConfigAutowireable;
 
 @Dao
 @ConfigAutowireable
-public interface TwoInSampleDao {
+public interface TwoInExampleDao {
 
     @Select
-    List<TwoInSample> select(Iterable<TwoInSample> condition);
+    List<TwoInExample> select(Iterable<TwoInExample> condition);
 }

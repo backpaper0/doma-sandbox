@@ -1,37 +1,36 @@
-package com.example.demo.two_in_sample;
+package com.example.demo.two_in_example;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.*;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
-public class TwoInSampleTest {
+class TwoInExampleTest {
 
     @Autowired
-    private TwoInSampleDao dao;
+    private TwoInExampleDao dao;
 
     @Test
-    public void test() throws Exception {
-        final List<TwoInSample> condition = new ArrayList<>();
+    void test() throws Exception {
+        final List<TwoInExample> condition = new ArrayList<>();
 
-        final TwoInSample a = new TwoInSample();
+        final TwoInExample a = new TwoInExample();
         a.foo = "bbb";
         a.bar = "ccc";
         condition.add(a);
 
-        final TwoInSample b = new TwoInSample();
+        final TwoInExample b = new TwoInExample();
         b.foo = "ccc";
         b.bar = "ddd";
         condition.add(b);
 
-        final List<TwoInSample> entities = dao.select(condition);
+        final List<TwoInExample> entities = dao.select(condition);
 
         assertThat(entities.size(), is(2));
 

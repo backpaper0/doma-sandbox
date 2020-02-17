@@ -1,10 +1,10 @@
-package com.example.demo.two_in_sample;
+package com.example.demo.two_in_example;
 
 import org.seasar.doma.Entity;
 import org.seasar.doma.Id;
 
 @Entity
-public class TwoInSample {
+public class TwoInExample {
     @Id
     public Long id;
     public String foo;

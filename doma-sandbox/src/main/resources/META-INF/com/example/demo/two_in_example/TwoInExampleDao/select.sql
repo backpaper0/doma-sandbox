@@ -1,7 +1,7 @@
 select
     /*%expand*/*
 from
-    two_in_sample
+    two_in_example
 where
     (foo, bar) in (
 /*%for a : condition */
