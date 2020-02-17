@@ -4,12 +4,8 @@ services:
   db:
     image: postgres:11
     ports: ["5432:5432"]
-    volumes: ["database:/database"]
     environment:
     - POSTGRES_DATABASE=example
     - POSTGRES_USER=example
     - POSTGRES_PASSWORD=example
-    - PGDATA=/database
 
-volumes:
-  database:
