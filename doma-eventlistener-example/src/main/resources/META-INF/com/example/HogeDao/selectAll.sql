@@ -1,1 +1,0 @@
-SELECT /*%expand*/* FROM hoge ORDER BY foo ASC
