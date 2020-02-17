@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>doma-insert-method-handle-multi-entities-foolish-sample</artifactId>
+	<artifactId>doma-insert-method-handle-multi-entities-foolish-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
