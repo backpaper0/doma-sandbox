@@ -111,17 +111,17 @@ public class FoolishQueryImplementors implements QueryImplementors {
         }
 
         @Override
-        public GeneratedIdPropertyType<? super ENTITY, ENTITY, ?, ?> getGeneratedIdPropertyType() {
+        public GeneratedIdPropertyType<ENTITY, ?, ?> getGeneratedIdPropertyType() {
             return delegate.getGeneratedIdPropertyType();
         }
 
         @Override
-        public VersionPropertyType<? super ENTITY, ENTITY, ?, ?> getVersionPropertyType() {
+        public VersionPropertyType<ENTITY, ?, ?> getVersionPropertyType() {
             return delegate.getVersionPropertyType();
         }
 
         @Override
-        public TenantIdPropertyType<? super ENTITY, ENTITY, ?, ?> getTenantIdPropertyType() {
+        public TenantIdPropertyType<ENTITY, ?, ?> getTenantIdPropertyType() {
             return delegate.getTenantIdPropertyType();
         }
 
